@@ -206,7 +206,7 @@ html {
 
 #closeWindowButton2,
 #closeWindowButton3 {
-  background-image: url("assets/Exit.png");
+  background-image: url("assets/images/Exit.png");
   background-size: cover;
   height: 20px;
   width: 20px;
@@ -219,7 +219,7 @@ html {
 #closeWindowButton,
 #closeWindowButton4,
 #closeWindowButton6 {
-  background-image: url("assets/Exit.png");
+  background-image: url("assets/images/Exit.png");
   background-size: cover;
   height: 20px;
   width: 20px;
@@ -234,7 +234,7 @@ html {
 #closeWindowButton3:hover,
 #closeWindowButton4:hover,
 #closeWindowButton6:hover {
-  background-image: url("assets/Exit-Shaded.png");
+  background-image: url("assets/images/Exit-Shaded.png");
 }
 
 #window1Drag,
@@ -450,12 +450,12 @@ html {
 }
 
 #startMenuButton {
-  background-image: url("assets/start.png");
+  background-image: url("assets/images/start.png");
   background-size: cover;
 }
 
 #startMenuButton:hover {
-  background-image: url("assets/start-hover.png");
+  background-image: url("assets/images/start-hover.png");
 }
 
 #taskbar {
@@ -724,13 +724,13 @@ details.music summary::before {
   top: 2px;
   width: 12px;
   height: 12px;
-  background-image: url("assets/Expand.png");
+  background-image: url("assets/images/Expand.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 details[open].music summary::before {
-  background-image: url("assets/Collapse.png");
+  background-image: url("assets/images/Collapse.png");
 }
 
 .dropMusicRow {
@@ -763,7 +763,7 @@ details[open].music summary::before {
   position: absolute;
   top: 5px;
   right: 8px;
-  background-image: url("assets/Restart.png");
+  background-image: url("assets/images/Restart.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -775,7 +775,7 @@ details[open].music summary::before {
   position: absolute;
   top: 5px;
   right: 8px;
-  background-image: url("assets/Restart-shaded.png");
+  background-image: url("assets/images/Restart-shaded.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

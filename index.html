@@ -1,198 +1,58 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hey, Callie!</title>
+    <title>Callie's Corner</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/images/la_lua.png" />
-
     <style>
-      html {
-        /* Light mode styling */
-        background-color: #f5f5f5;
-        color: #111111;
-        text-align: center;
-        overflow: hidden;
-        font-family: "Arial";
+      body {
+        margin: 0;
       }
 
-      h1 {
-        margin: 0px;
-        font-size: 66px;
-        font-style: italic;
-      }
-
-      h2 {
-        margin: 0px;
-      }
-
-      p {
-        margin: 0px;
-      }
-
-      input {
-        border-radius: 18px;
-        width: 342px;
-        height: 44px;
-        font-size: 20px;
-        border-width: 4px;
-        background-color: white;
-        color: black;
-        margin-top: 10px;
-        padding-left: 10px;
+      .buttons img {
+        height: 50px;
       }
 
       a {
-        color: #8b6b3e;
-        font-size: 24px;
+        color: #0000ee;
       }
 
       a:hover {
-        color: #333333;
-      }
-
-      a.left {
-        text-align: left;
-      }
-
-      .hidden {
-        display: none;
-      }
-
-      #lightbulb {
-        transition: transform 0.2s ease-in-out;
-      }
-
-      #lightbulb:hover {
-        transform: translateY(30px);
+        color: #ff0000;
       }
     </style>
-    <script>
-      async function setTheme(enableLightMode) {
-        await fetch(`/api/set-theme?mode=${enableLightMode}`);
-        window.location.reload();
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        if (localStorage.getItem("msLastTime")) {
-          document.getElementById("welcome").innerHTML = "welcome back.";
-          let theTimeSince =
-            (Date.now() - localStorage.getItem("msLastTime")) / 1000;
-          if (theTimeSince >= 86400) {
-            theTimeSince = Math.round(theTimeSince / 86400);
-            theTimeSince =
-              theTimeSince === 1
-                ? theTimeSince + " day"
-                : theTimeSince + " days";
-          } else if (theTimeSince >= 3600) {
-            theTimeSince = Math.round(theTimeSince / 3600);
-            theTimeSince =
-              theTimeSince === 1
-                ? theTimeSince + " hour"
-                : theTimeSince + " hours";
-          } else if (theTimeSince >= 60) {
-            theTimeSince = Math.round(theTimeSince / 60);
-            theTimeSince =
-              theTimeSince === 1
-                ? theTimeSince + " minute"
-                : theTimeSince + " minutes";
-          } else if (Math.round(theTimeSince) === 1) {
-            theTimeSince = Math.round(theTimeSince) + " second";
-          } else {
-            theTimeSince = Math.round(theTimeSince) + " seconds";
-          }
-          document.getElementById("timeSince").innerHTML =
-            "Last visited " + theTimeSince + " ago.";
-        } else {
-          document.getElementById("lastVisited").classList.add("hidden");
-        }
-
-        localStorage.setItem("msLastTime", Date.now());
-
-        showTime();
-        setInterval(showTime, 1000);
-      });
-
-      function showTime() {
-        var d = new Date();
-        var n = d.toLocaleTimeString();
-        var today = new Date();
-        var dd = String(today.getDate()).padStart(2, "0");
-        var mm = String(today.getMonth() + 1).padStart(2, "0");
-        var yyyy = today.getFullYear();
-
-        var todayStr = mm + "/" + dd + "/" + yyyy;
-        document.getElementById("timeNow").innerHTML = n;
-        document.getElementById("dateNow").innerHTML = todayStr;
-      }
-    </script>
   </head>
 
-  <body id="main">
-    <span
-      style="
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        text-align: left;
-        font-size: 20px;
-        font-family: Cascadia Mono;
-      "
-      >/index.html</span
-    >
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      "
-    >
+  <body>
+    <div style="display: flex; align-items: center" class="buttons">
+      <img src="assets/images/mp3button7.gif" />
+      <img src="assets/images/linux_now.gif" />
+      <img src="assets/images/n-as.gif" />
+      <img src="assets/images/buynow.gif" />
+      <img src="assets/images/bugle-boy-1.gif" />
+      <img src="assets/images/autoconnect-5.gif" />
+      <img src="assets/images/aimlink.gif" />
+      <img src="assets/images/cdw-24.gif" />
+      <img src="assets/images/noaol.gif" />
+    </div>
+    <div style="display: flex; justify-content: center; min-height: 100vh">
       <div
         style="
-          display: flex;
-          align-items: center;
-          gap: 0px;
-          flex-direction: column;
+          border: 1px solid black;
+          text-align: center;
+          left: 0px;
+          position: absolute;
         "
       >
-        <h1>
-          <span id="welcome">welcome.</span>
-        </h1>
-
-        <div style="display: flex; gap: 40px; align-items: flex-start">
-          <div
-            style="display: flex; flex-direction: column; align-items: center"
-          >
-            <p
-              style="font-size: 30px; font-style: italic; font-weight: bold"
-              id="dateNow"
-            ></p>
-            <a href="desktop">desktop</a>
-            <a href="whatchacallitsname/">whatchacallitsname</a>
-          </div>
-
-          <div
-            style="display: flex; flex-direction: column; align-items: center"
-          >
-            <p
-              style="font-size: 30px; font-style: italic; font-weight: bold"
-              id="timeNow"
-            ></p>
-            <a href="nighttime">nighttime</a>
-            <a href="credits">credits</a>
-          </div>
-        </div>
+        <img src="assets/images/sidebar.png" />
+        <p>sidebar</p>
+        <a href="desktop.html">desktop.html</a><br />
+        <a href="whatchacallitsname/">whatchacallitsname/</a>
       </div>
-
-      <img src="assets/images/la_lua.png" style="height: 400px" />
-
-      <h2
-        id="lastVisited"
-        style="position: fixed; bottom: 10px; left: 10px; font-family: Arial"
-      >
-        <span id="timeSince" style="font-style: italic"></span>
-        <br />
-      </h2>
+      <div style="border: 1px solid black; text-align: center">
+        <img src="assets/images/welcome.png" />
+        <p>hiii!!! :p this is heycallie.net!</p>
+      </div>
     </div>
   </body>
 </html>
