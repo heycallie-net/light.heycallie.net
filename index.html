@@ -7,6 +7,7 @@
     <style>
       body {
         margin: 0;
+        background-color: #008080;
       }
 
       .buttons img {
@@ -24,6 +25,22 @@
       p {
         margin: 0;
       }
+
+      .header {
+        text-align: left;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        /* width: fit-content; */
+        transition: background-color, 0.4s;
+      }
+
+      .header:hover {
+        background-color: cyan;
+      }
     </style>
   </head>
 
@@ -38,6 +55,7 @@
       <img src="assets/images/aimlink.gif" />
       <img src="assets/images/cdw-24.gif" />
       <img src="assets/images/noaol.gif" />
+      <img src="assets/images/constructionbutton.gif" />
     </div>
     <div
       style="
@@ -49,25 +67,28 @@
     >
       <div
         style="
-          border: 1px solid black;
           text-align: center;
           border-radius: 20px;
           padding-left: 20px;
           padding-right: 20px;
+          background-color: white;
         "
       >
         <h1>welcome to heycallie.net!</h1>
-        <p>
-          WARNING SIGN! constantly in progress!<br />most important buttons go
-          here too.
+        <p style="font-family: Franklin Gothic Regular; font-size: 24px">
+          HEAVILY IN PROGRESS AT THE MOMENT!<br />
         </p>
-        <h3>>> ABOUT THIS SITE (HEADER)</h3>
-        <p>
-          silly information about my site here! talk about how its just for
-          me.<br />
-          silly things go on here, always in progress, etc etc.
+        <img src="assets/images/constructionbanner.gif" />
+
+        <!-- <script src="https://transring.neocities.org/ring.js"></script> -->
+        <h3 class="header">>> ABOUT THIS SITE (HEADER)</h3>
+        <!-- silly information about my site here! talk about how its just for
+          me. silly things go on here, always in progress, etc etc. -->
+        <p id="aboutSite" class="aboutText">
+          heycallie.net was born january 26th, 2026. it was hand-coded from
+          scratch!
         </p>
-        <h3>>> ABOUT ME! (HEADER)</h3>
+        <h3 class="header">>> ABOUT ME! (HEADER)</h3>
         <p>here we can put some stuff abt me. i know, i'm very interesting.</p>
         <div
           style="
